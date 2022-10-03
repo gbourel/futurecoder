@@ -1,0 +1,11 @@
+[build]
+publish = "frontend/public"
+command = """
+pip install poetry &&
+poetry install &&
+./scripts/generate.sh &&
+cd frontend &&
+npm ci &&
+npm run build &&
+cp course/service-worker.js public/
+"""
