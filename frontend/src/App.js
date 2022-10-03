@@ -459,7 +459,7 @@ const MenuPopup = ({user}) =>
             </button>
           </p>
         }
-        <p>
+        { /*<p>
           <Popup
             trigger={
               <button className="btn btn-primary">
@@ -485,7 +485,7 @@ const MenuPopup = ({user}) =>
           >
             {close => <FeedbackModal close={close}/>}
           </Popup>
-        </p>
+        </p> */ }
         {
           otherVisibleLanguages.map(lang =>
             <p>
